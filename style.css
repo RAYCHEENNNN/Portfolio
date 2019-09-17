@@ -1,0 +1,60 @@
+body{
+  margin:0;
+  padding:0;
+  color: black;
+}
+
+.container {
+  display: inline-block;
+  cursor: pointer;
+  position:absolute;
+}
+
+.bar1, .bar2, .bar3 {
+
+  width: 35px;
+  height: 5px;
+  background-color: white;
+  margin: 6px 0;
+  transition: 0.4s;
+  z-index: 1;
+}
+
+.change .bar1 {
+  -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+  transform: rotate(-45deg) translate(-9px, 6px);
+}
+
+.change .bar2 {opacity: 0;}
+
+.change .bar3 {
+  -webkit-transform: rotate(45deg) translate(-8px, -8px);
+  transform: rotate(45deg) translate(-8px, -8px);
+}
+
+.hero-main{
+  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2)), url(https://insight.futurestudents.csu.edu.au/wp-content/uploads/2018/12/CSU-Work-beyond-2020-Journalism.jpg);
+  background-size: cover;
+  background-repeat:no-repeat;
+  background-position:center;
+  position: relative;
+  width:100vw;
+  height:100vh;
+  display:flex;
+  justify-content: center;
+  align-items:center;
+  z-index: -1;
+}
+
+.hero-title{
+  font-family: "Montserrat";
+  font-size: 70px;
+  color: white;
+  text-align:center;
+}
+
+.hero-subtitle{
+  font-family: 'PT Serif Caption', serif;
+  color: white;
+  text-align:center;
+}
